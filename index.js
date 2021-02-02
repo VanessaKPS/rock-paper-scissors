@@ -40,7 +40,7 @@ const verdict = (playerHand, computerHand) => {
     } else if (playerHand === 'paper') {
         if (computerHand === 'scissors') {
             document.querySelector('.verdict').innerHTML = 'YOU LOSE'
-            counter = counter
+            counter = counter - 1
         } else if (computerHand === 'rock') {
             document.querySelector('.verdict').innerHTML = 'YOU WIN'
             counter++
@@ -48,7 +48,7 @@ const verdict = (playerHand, computerHand) => {
     } else if (playerHand === 'scissors') {
         if (computerHand === 'rock') {
             document.querySelector('.verdict').innerHTML = 'YOU LOSE'
-            // counter = counter;
+            counter = counter - 1
         } else if (computerHand === 'paper') {
             document.querySelector('.verdict').innerHTML = 'YOU WIN'
             counter++
@@ -56,7 +56,7 @@ const verdict = (playerHand, computerHand) => {
     } else if (playerHand === 'rock') {
         if (computerHand === 'paper') {
             document.querySelector('.verdict').innerHTML = 'YOU LOSE'
-            counter = counter
+            counter = counter - 1
         } else if (computerHand === 'scissors') {
             document.querySelector('.verdict').innerHTML = 'YOU WIN'
             counter++

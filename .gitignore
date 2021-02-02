@@ -15,6 +15,6 @@
 .DS_Store
 
 #avoid design folder, style guide, readme
-/design
-.README.md
-.style-guide.md
+design/
+*.md
+

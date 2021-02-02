@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://www.flaticon.com/svg/vstatic/svg/4144/4144475.svg?token=exp=1612271853~hmac=86c4b329b05aebeb011bf3b764218024"
+        />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Rock, Paper, Scissors</title>
+    </head>
 
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-</head>
+    <body>
+        <section class="app">
+            <div class="heading">
+                <img class="logo-img" src="images/logo.svg" alt="logo-img" />
+                <div class="scoring">
+                    <h2 class="score-heading">SCORE</h2>
+                    <h1 class="score-value">0</h1>
+                </div>
+            </div>
+            <div class="rules-bg hide"></div>
+            <div class="rules-text hide">
+                <h2 class="rules-title">RULES</h2>
+                <img
+                    class="close-icon"
+                    src="images/icon-close.svg"
+                    alt="close-img"
+                />
+                <img
+                    class="rules-illustration"
+                    src="images/image-rules.svg"
+                    alt="rules-img"
+                />
+            </div>
+            <div class="play-area">
+                <img
+                    class="triangle-img"
+                    src="images/bg-triangle.svg"
+                    alt="triangle-img"
+                />
 
-<body>
-  <section class='app'>
-    <div class='heading'>
-      <img class='logo-img' src="images/logo.svg" alt="logo-img">
-      <div class='scoring'>
-        <h2 class='score-heading'>SCORE</h2>
-        <h1 class='score-value'>0</h1>
-      </div>
-    </div>
-    <div class='rules-bg hide'>
-
-    </div>
-    <div class='rules-text hide'>
-      <h2 class='rules-title'>RULES</h2>
-      <img class='close-icon' src="images/icon-close.svg" alt="close-img">
-      <img class='rules-illustration' src="images/image-rules.svg" alt="rules-img">
-    </div>
-    <div class='play-area'>
-
-      <img class='triangle-img' src="images/bg-triangle.svg" alt="triangle-img">
-
-      <div class='paper'>
-        <img class='paper-img' src="images/icon-paper.svg" alt="paper">
-      </div>
-      <div class='scissors'>
-        <img class='scissors-img' src="images/icon-scissors.svg" alt="scissors">
-      </div>
-      <div class='rock'>
-        <img class='rock-img' src="images/icon-rock.svg" alt="rock">
-      </div>
-    </div>
-    <div class='game-on hide'>
-      <div class='player-wrapper'>
-        <img class='player-pick' src="" alt="player's-choice">
-      </div>
-      <div class='restart-wrapper'>
-        <h1 class='verdict'>YOU</h1>
-        <h3 class='restart'>PLAY AGAIN</h3>
-      </div>
-      <div class='computer-wrapper'>
-        <img class='computer-pick' src="" alt="computer's-choice">
-      </div>
-
-    </div>
-    <div class='rules'>
-      <h2 class='rules-link'>RULES</h2>
-    </div>
-
-  </section>
-  <script src="index.js" charset='UTF-8'></script>
-</body>
-
+                <div class="paper">
+                    <img
+                        class="paper-img"
+                        src="images/icon-paper.svg"
+                        alt="paper"
+                    />
+                </div>
+                <div class="scissors">
+                    <img
+                        class="scissors-img"
+                        src="images/icon-scissors.svg"
+                        alt="scissors"
+                    />
+                </div>
+                <div class="rock">
+                    <img
+                        class="rock-img"
+                        src="images/icon-rock.svg"
+                        alt="rock"
+                    />
+                </div>
+            </div>
+            <div class="game-on hide">
+                <div class="player-wrapper">
+                    <img class="player-pick" src="" alt="player's-choice" />
+                </div>
+                <div class="restart-wrapper">
+                    <h1 class="verdict">YOU</h1>
+                    <h3 class="restart">PLAY AGAIN</h3>
+                </div>
+                <div class="computer-wrapper">
+                    <img class="computer-pick" src="" alt="computer's-choice" />
+                </div>
+            </div>
+            <div class="rules">
+                <h2 class="rules-link">RULES</h2>
+            </div>
+        </section>
+        <script src="index.js" charset="UTF-8"></script>
+    </body>
 </html>
